@@ -1,0 +1,17 @@
+[Unit]
+Description=TL;DV Pipeline Telegram Bot
+After=network.target
+
+[Service]
+Type=simple
+User=%I
+WorkingDirectory=/home/%I/tldv-pipeline
+EnvironmentFile=/home/%I/tldv-pipeline/.env
+ExecStart=/home/%I/tldv-pipeline/.venv/bin/python /home/%I/tldv-pipeline/bot.py
+Restart=always
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

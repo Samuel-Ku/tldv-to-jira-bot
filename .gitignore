@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+ENV/
+env/
+
+# Environment variables
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary files
+/tmp/
+*.tmp
+*.log
+
+# Downloads
+/tmp/tldv/
+*.mp4
+*.wav
+*.mp3
+
+# Whisper output
+*.json
+!keywords.json
+!pdf_config.json
+*.txt
+*.srt
+*.vtt
+*.lrc
+*.csv
+
+# Models (large files)
+*.bin
+*.gguf
+
+# System
+.DS_Store
+Thumbs.db
